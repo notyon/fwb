@@ -76,7 +76,7 @@ async def gagal_kirim_handler(client: Client, msg: types.Message):
     first_name = msg.from_user.first_name
     last_name = msg.from_user.last_name
     fullname = first_name if not last_name else first_name + ' ' + last_name
-    username = '@vilancegod' if not msg.from_user.username else '@' + msg.from_user.username
+    username = '@fwb18fess' if not msg.from_user.username else '@' + msg.from_user.username
     mention = msg.from_user.mention
     return await msg.reply(config.gagalkirim_msg.format(
         id = msg.from_user.id,
@@ -91,16 +91,16 @@ async def help_handler(client, msg):
     db = Database(msg.from_user.id)
     member = db.get_data_pelanggan()
     pesan = "❏ Supported commands\n"
+    pesan += '├ • /start — untuk memulai bot\n'
     pesan += '├ • /status — melihat status\n'
     pesan += '└ • /tf_coin — transfer coin ke user lain\n'
     pesan += '\nHarap gunakan hastag dibawah untuk mengirim pesan\n'
-    pesan += '#pap - untuk kirim pap/video random\n'
-    pesan += '#boy - gunakan ini untuk mencari teman kalau kamu cowo.\n'
-    pesan += '#girl - gunaian ini untuk mencari teman kalau kamu cewe\n'
-    pesan += '#spill - untuk spill sesuatu\n'
-    pesan += '#story - untuk bercerita\n'
-    pesan += '#ask - untuk bertanya di grup\n'
-    pesan += '\ncontoh : hi, call yu #girl\n'
+    pesan += '#fwbboy - gunakan ini untuk mencari teman kalau kamu cowo.\n'
+    pesan += '#fwbgirl - gunakan ini untuk mencari teman kalau kamu cewe\n'
+    pesan += '#fwbspill - untuk spill sesuatu\n'
+    pesan += '#fwbstory - untuk bercerita\n'
+    pesan += '#fwbask - untuk bertanya di grup\n'
+    pesan += '\ncontoh : hi, call yu #fwbgirl\n'
     pesan += '\njangan lupa join @topbasetelegram\n'
     if member.status == 'admin':
         pesan += '\nHanya Admin\n'
