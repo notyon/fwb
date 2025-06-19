@@ -37,6 +37,7 @@ pesan_join = os.getenv("PESAN_JOIN", """
 kamu tidak dapat menggunakan bot 🙅, untuk mengirim pesan ke @fwb18fess harap join terlebih dahulu ke channel dan grup yang ada dibawah, jika sudah tekan coba lagi atau /help.
 
 Seputar informasi & pertanyaan hubungi @leoservicebot
+🚫 NSFW = BAN PERMANENT.
 """)
 start_msg = os.getenv("START_MSG", """
 halo {mention}
@@ -48,6 +49,8 @@ halo {mention}
 #fwbspill : untuk spill sesuatu.
 #fwbstory : untuk berbagi cerita/pengalaman.
 #fwbask : untuk bertanya ke grup.
+
+🚫 NSFW = BAN PERMANENT.
 """)
 
 gagalkirim_msg = os.getenv("GAGAL_KIRIM", """
@@ -60,4 +63,5 @@ gagalkirim_msg = os.getenv("GAGAL_KIRIM", """
 #fwbask : untuk bertanya ke grup.
 
 powered by @topbasetelegram
+🚫 NSFW = BAN PERMANENT.
 """)
