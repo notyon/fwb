@@ -59,7 +59,7 @@ class Bot(Client):
         self.id_bot = bot_me.id
         data.append(self.id_bot)
         await self.set_bot_commands([
-            BotCommand('status', '📊 check status'), BotCommand('help', '❓ tutorial kirim'),
+            BotCommand('start', '👋 memulai bot'), BotCommand('status', '📊 check status'), BotCommand('help', '❓ tutorial kirim'),
         ], BotCommandScopeAllPrivateChats())
         
         print('BOT TELAH AKTIF')
